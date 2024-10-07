@@ -1,0 +1,177 @@
+html {color: gray}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    background-image: url('misc/grille.png');
+    color: #8d8b8b;}
+
+.headercategory {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 5%;}
+
+.category {
+    margin-right: 20px;
+    position: relative;
+    text-align: left;}
+
+.categorytitle {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;}
+
+.categorytitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 130px;
+    height: 6px;
+    background-color: var(--category-color);
+    }
+
+.subcategory {
+    display: block;
+    position: relative;
+    margin-left: 0;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    white-space: nowrap;}
+
+.category:hover .subcategory {
+    display: block;}
+
+.subcategory li {
+    padding: 5px 0;}
+
+.logoABC {
+    margin-right: auto;
+    margin-left: 2%;}
+
+.category:nth-child(1) {
+    --category-color: #f58700;
+    margin-right: 60px;}
+
+.category:nth-child(2) {
+    --category-color: #f1c100;
+    margin-right: 35px;}
+
+.category:nth-child(3) {
+    --category-color: #87b728;
+    margin-right: 75px;}
+
+.category:nth-child(4) {
+    --category-color: #40a0ff;
+    margin-right: 60px;}
+
+.category:nth-child(5) {
+    --category-color: #cc5ccc;}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #f0f0f0;
+    margin: 10px;}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 30px;}
+
+.textsection {
+    text-align: center;
+    background-image: url('misc/grille.png');
+    padding: 15px;}
+
+.textsection p {
+    font-size: 18px;
+    color: #908f8f;}
+
+.activity {
+    padding: 15px;
+    border: 1px solid #ddd;
+    max-width: 250px;}
+
+.activity h2 {
+    color: #ff6600;}
+
+.activitiesgrid {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #8d8b8b;}
+
+.activity {
+    padding: 15px;
+    border: 1px solid #ddd;
+    max-width: 230px;}
+
+h2 {
+    color: #ff6600;}
+
+.contactsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;}
+
+.contactsection > div {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 220px;}
+
+.contactsection > div:last-child {
+    margin-right: 0;}
+
+h3 {
+    color: #939191;}
+
+p.date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 5px;}
+
+p.comments {
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;}
+
+h4 {
+    color: #918f8f;}
+
+p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;}
+
+.tab {
+    display: flex;
+    color: #888;
+    background-image: url('misc/grille.png');}
+
+.sitefooter {
+    color: #8d8b8b;
+    position: relative;
+    padding: 1%;}
+
+.socialicons {
+    position: absolute;
+    padding: 1%;
+    bottom: 25px;
+    right: 5px;}
+
+.gallery img {
+    background-repeat: repeat-x;}
